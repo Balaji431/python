@@ -1,0 +1,9 @@
+from itertools import permutations
+def unique_permutations(number):
+    num_str = str(number)
+    all_permutations = permutations(num_str)
+    unique_perms = set(''.join(p) for p in all_permutations)
+    for perm in unique_perms:
+        print(int(perm))
+number = 143
+unique_permutations(number)
