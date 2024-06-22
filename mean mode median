@@ -1,0 +1,18 @@
+from collections import Counter
+from statistics import mean, median, mode, StatisticsError
+def calculate_mean(numbers):
+    return mean(numbers)
+def calculate_median(numbers):
+    return median(numbers)
+def calculate_mode(numbers):
+    try:
+        return mode(numbers)
+    except StatisticsError as e:
+        return str(e)
+numbers = [1, 2, 2, 3, 4, 5, 5, 5]
+mean_value = calculate_mean(numbers)
+median_value = calculate_median(numbers)
+mode_value = calculate_mode(numbers)
+print(f"Mean: {mean_value}")
+print(f"Median: {median_value}")
+print(f"Mode: {mode_value}")
