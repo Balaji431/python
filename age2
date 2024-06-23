@@ -1,0 +1,14 @@
+def get_ticket_price(age):
+    if 0 <= age <= 3:
+        return "Free"
+    elif 4 <= age <= 12:
+        return "Rs 10"
+    elif age > 12:
+        return "Rs 20"
+    else:
+        return "Invalid age"
+    age = int(input("Enter the passenger's age: "))
+    ticket_price = get_ticket_price(age)
+    print(f"The ticket price for age {age} is: {ticket_price}")
+except ValueError:
+    print("Invalid input. Please enter a valid age.")
