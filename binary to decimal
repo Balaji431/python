@@ -1,0 +1,11 @@
+def binary_to_decimal(binary_number):
+    decimal_number = int(binary_number, 2)
+    return decimal_number
+def decimal_to_octal(decimal_number):
+    octal_number = oct(decimal_number)[2:]
+    return octal_number
+binary_number = "1101"
+decimal_number = binary_to_decimal(binary_number)
+octal_number = decimal_to_octal(decimal_number)
+print(f"Decimal Number: {decimal_number}")
+print(f"Octal: {octal_number}")
