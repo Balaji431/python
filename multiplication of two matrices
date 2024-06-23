@@ -1,0 +1,22 @@
+def matrix_multiplication(A, B):
+    rows_A = len(A)
+    cols_A = len(A[0])
+    rows_B = len(B)
+    cols_B = len(B[0])
+    if cols_A != rows_B:
+        raise ValueError("Cannot multiply the two matrices. They have incompatible dimensions.")
+    # Create the result matrix with zeros
+    C = [[0 for _ in range(cols_B)] for _ in range(rows_A)]
+
+    # Perform matrix multiplication
+    for i in range(rows_A):
+        for j in range(cols_B):
+            for k in range(cols_A):
+                C[i][j] += A[i][k] * B[k][j]
+    return C
+A = [[2, 1], [3, 4]]
+B = [[1, 2], [1, 2]]
+C = matrix_multiplication(A, B)
+print("The result of the multiplication is:")
+for row in C:
+    print(row)
