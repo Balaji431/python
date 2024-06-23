@@ -1,0 +1,7 @@
+def count_occurrences(numbers_tuple, target_number):
+    count = numbers_tuple.count(target_number)
+    return count
+numbers_tuple = (3, 6, 8, 9, 8, 9, 12, 35, 8)
+target_number = 8
+count = count_occurrences(numbers_tuple, target_number)
+print(f"The number {target_number} occurs {count} times in the tuple.")
