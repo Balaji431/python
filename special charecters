@@ -1,0 +1,9 @@
+def count_special_characters(statement):
+    special_characters = 0
+    for char in statement:
+        if not char.isalnum() and not char.isspace():
+            special_characters += 1
+    return special_characters
+given_statement = "Raju Birthday @ September 24, #&amp;$%is the wishes code for him."
+special_characters_count = count_special_characters(given_statement)
+print(f"Number of special characters: {special_characters_count}")
