@@ -1,0 +1,6 @@
+def sort_array(arr):
+    return sorted(arr)
+original_array = [6, 7, 2, 5, 1, 8, 4]
+sorted_array = sort_array(original_array)
+print("Original Array:", ' '.join(map(str, original_array)))
+print("Array after sorting:", ' '.join(map(str, sorted_array)))
