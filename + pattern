@@ -1,0 +1,6 @@
+def print_pattern(character, num_rows):
+    for i in range(1, num_rows + 1):
+        print((character + ' ') * i)
+character = input("Enter the Character to be printed: ")
+num_rows = int(input("Number of rows: "))
+print_pattern(character, num_rows)
