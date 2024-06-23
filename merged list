@@ -1,0 +1,10 @@
+def merge_and_sort(a, b):
+    # Merge the lists
+    c = a + b
+    sorted_c = sorted(c)
+    return c, sorted_c
+a = [1, 2, 7, 4, 5]
+b = [11, 10, 13]
+merged_list, sorted_list = merge_and_sort(a, b)
+print("Merged List:", merged_list)
+print("Sorted List:", sorted_list)
