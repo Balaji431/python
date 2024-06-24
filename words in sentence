@@ -1,0 +1,9 @@
+def count_words(sentence):
+    words = sentence.split()
+    return len(words)
+def main():
+    sentence = input("Enter the sentence: ")
+    num_words = count_words(sentence)
+    print(f"Number of words in the sentence: {num_words}")
+if __name__ == "__main__":
+    main()
