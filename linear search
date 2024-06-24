@@ -1,0 +1,15 @@
+def linear_search(lst, target):
+    for element in lst:
+        if element == target:
+            return True
+    return False
+def main():
+    input_list = input("Enter the list of numbers (separated by spaces): ")
+    numbers = list(map(int, input_list.split()))
+    target = int(input("Target: "))
+    if linear_search(numbers, target):
+        print("Result: Exist")
+    else:
+        print("Result: Not exist")
+if __name__ == "__main__":
+    main()
