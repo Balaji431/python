@@ -1,0 +1,6 @@
+def main():
+    input_string = input("Enter the string: ")
+    string_length = len(input_string)
+    print(f"Length of the String: {string_length}")
+if __name__ == "__main__":
+    main()
