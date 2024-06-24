@@ -1,0 +1,10 @@
+def reverse_alphabetical_order(word):
+    sorted_letters = sorted(word.upper(), reverse=True)
+    result = ' '.join(sorted_letters)
+    return result
+def main():
+    word = input("Enter the word: ")
+    result = reverse_alphabetical_order(word)
+    print(f"Alphabetical Order: {result}")
+if __name__ == "__main__":
+    main()
