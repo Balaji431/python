@@ -1,0 +1,11 @@
+def convert_and_join(sentence):
+    words = sentence.split()
+    capitalized_words = [word.capitalize() for word in words]
+    result = '.'.join(word[0] for word in capitalized_words) + '.'
+    return result
+def main():
+    sentence = input("Enter the sentence: ")
+    result = convert_and_join(sentence)
+    print(f"Output: {result}")
+if __name__ == "__main__":
+    main()
