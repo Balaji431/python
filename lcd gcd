@@ -1,0 +1,21 @@
+import math
+from functools import reduce
+def gcd(a, b):
+    return math.gcd(a, b)
+def lcm(a, b)
+    return abs(a * b) // gcd(a, b)
+def find_gcd_and_lcm(numbers):
+    overall_gcd = reduce(gcd, numbers)
+    overall_lcm = reduce(lcm, numbers)
+    return overall_gcd, overall_lcm
+def main():
+    n = int(input("N value = "))
+    numbers = []
+    for i in range(n):
+        number = int(input(f"Number {i + 1} = "))
+        numbers.append(number)
+    overall_gcd, overall_lcm = find_gcd_and_lcm(numbers)
+    print(f"GCD = {overall_gcd}")
+    print(f"LCM = {overall_lcm}")
+if __name__ == "__main__":
+    main()
