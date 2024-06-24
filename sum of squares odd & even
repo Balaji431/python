@@ -1,0 +1,15 @@
+def sumsquare(l):
+    odd_sum = sum(x**2 for x in l if x % 2 != 0)
+    even_sum = sum(x**2 for x in l if x % 2 == 0)
+    return [odd_sum, even_sum]
+def main():
+    n = int(input("Enter the number of elements: "))
+    elements = []
+    for _ in range(n):
+        element = int(input("Enter the element: "))
+        elements.append(element)
+    result = sumsquare(elements)
+    print(f"Sum of squares of odd numbers: {result[0]}")
+    print(f"Sum of squares of even numbers: {result[1]}")
+if __name__ == "__main__":
+    main()
