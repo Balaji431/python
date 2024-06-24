@@ -1,0 +1,16 @@
+def sum_of_digits(n):
+    while n > 9:
+        n = sum(int(digit) for digit in str(n))
+    return n
+def main():
+    N = int(input("Enter N value: "))
+    number = input(f"Enter {N} digit number: ")
+    if len(number) != N or not number.isdigit():
+        print("Invalid input! Please enter exactly", N, "digits.")
+        return
+    number = int(number)    
+    result = sum_of_digits(number)
+    print(f"Sum of {N} digit number: {result}")
+
+if __name__ == "__main__":
+    main()
