@@ -1,0 +1,8 @@
+def swap_elements(lst, pos1, pos2):
+    lst[pos1], lst[pos2] = lst[pos2], lst[pos1]
+    return lst
+
+lst = [4, 6, 12, 50, 67, 55]
+pos1 = 1
+pos2 = 4
+print(swap_elements(lst, pos1, pos2))
