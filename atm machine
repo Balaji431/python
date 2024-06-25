@@ -1,0 +1,11 @@
+def atm_machine():
+    denominations = []
+    total_amount = 0
+    for i in range(4):
+        denomination = int(input(f"Enter the {i+1}st Denomination: "))
+        num_notes = int(input(f"Enter the {i+1}st Denomination number of notes: "))
+        total_amount += denomination * num_notes
+        denominations.append((denomination, num_notes))
+    print(f"Total Available Balance in ATM: {total_amount}")
+
+atm_machine()
