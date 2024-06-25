@@ -1,0 +1,11 @@
+def print_pattern(start, max_lines):
+    num = start
+    for i in range(max_lines):
+        for j in range(i+1):
+            print(f"{num:.1f}", end=" ")
+            num += 0.1
+        print()
+
+start = float(input("Enter the starting number: "))
+max_lines = int(input("Max number of lines printed: "))
+print_pattern(start, max_lines)
