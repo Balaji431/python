@@ -1,0 +1,6 @@
+def split_and_add(arr):
+    mid = len(arr) // 2
+    return arr[mid:] + arr[:mid]
+
+arr = [1, 5, 7, 12, 5, 8]
+print(split_and_add(arr))
