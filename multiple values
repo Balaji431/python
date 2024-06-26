@@ -1,0 +1,7 @@
+def return_multiple_values():
+    return 42, "hello", [1, 2, 3]
+
+a, b, c = return_multiple_values()
+print(a)  
+print(b)  
+print(c)  
