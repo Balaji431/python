@@ -1,0 +1,8 @@
+def sum_dict_values(d):
+    return sum(d.values())
+
+d = {'a': 100, 'b': 200, 'c': 300}
+print(sum_dict_values(d))  # Output: 600
+
+d = {'x': 25, 'y': 18, 'z': 45}
+print(sum_dict_values(d))  # Output: 88
