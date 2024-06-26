@@ -1,0 +1,4 @@
+def check_first_last(lst):
+    return lst[0] == lst[-1]
+lst = [int(x) for x in input("Enter a list of numbers: ").split()]
+print(check_first_last(lst))
