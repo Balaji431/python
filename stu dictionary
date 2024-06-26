@@ -1,0 +1,18 @@
+def create_student_dict():
+    student_dict = {}
+    n = int(input("Enter the number of students: "))
+    for i in range(n):
+        name = input("Enter student name: ")
+        marks = int(input("Enter student marks: "))
+        student_dict[name] = marks
+    return student_dict
+
+def display_student_marks(student_dict):
+    name = input("Enter student name: ")
+    if name in student_dict:
+        print(f"Student {name} has marks: {student_dict[name]}")
+    else:
+        print("Student not found")
+
+student_dict = create_student_dict()
+display_student_marks(student_dict)
