@@ -1,0 +1,5 @@
+def create_new_list(lst1, lst2):
+    return [x for x in lst1 if x % 2!= 0] + [x for x in lst2 if x % 2 == 0]
+lst1 = [int(x) for x in input("Enter the first list of numbers: ").split()]
+lst2 = [int(x) for x in input("Enter the second list of numbers: ").split()]
+print(create_new_list(lst1, lst2))
