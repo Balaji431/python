@@ -1,0 +1,6 @@
+def digit_to_word(n):
+    words = ["ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"]
+    return words[n]
+
+n = int(input("Enter a single digit number: "))
+print(digit_to_word(n))
