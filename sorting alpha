@@ -1,0 +1,16 @@
+words = ["banana", "apple", "grape", "orange", "kiwi"]
+for i in range(len(words)):
+    for j in range(i + 1, len(words)):
+        if words[i] > words[j]:
+            # Swap words[i] and words[j]
+            temp = words[i]
+            words[i] = words[j]
+            words[j] = temp
+vowels = "aeiou"
+for word in words:
+    vowel_count = 0
+    for char in word:
+        if char in vowels:
+            vowel_count += 1
+    print(f"Word: {word}, Vowel Count: {vowel_count}")
+print("Sorted Words:", words)
