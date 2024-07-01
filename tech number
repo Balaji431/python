@@ -1,0 +1,14 @@
+number = int(input("Enter a number: "))
+num_str = str(number)
+if len(num_str) % 2 == 0:
+    mid = len(num_str) // 2
+    first_half = int(num_str[:mid])
+    second_half = int(num_str[mid:])
+    sum_of_halves = first_half + second_half
+    if sum_of_halves ** 2 == number:
+        print(f"{number} is a Tech Number.")
+    else:
+        print(f"{number} is not a Tech Number.")
+else:
+    print(f"{number} is not a Tech Number because it does not have an even number of digits.")
+
